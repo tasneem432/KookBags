@@ -6,10 +6,14 @@ import 'package:kookbags/app/central_reuseable_widgets/amar_app_header.dart';
 import 'package:kookbags/app/chat_screen/screens/chat_screen.dart';
 import 'package:kookbags/app/checkout_one/screens/checkout_one.dart';
 import 'package:kookbags/app/conversation_list_screen/screens/conversation_list_screen.dart';
+import 'package:kookbags/app/earn_and_reffer_screens/screens/earn_and_reffer_coupon.dart';
+import 'package:kookbags/app/earn_and_reffer_screens/screens/earn_and_reffer_screens.dart';
 import 'package:kookbags/app/help_and_support_screen/screens/help_and_support_screen.dart';
 import 'package:kookbags/app/home_screen/screens/home_screen.dart';
 import 'package:kookbags/app/item_details_screens/screens/item_details_screen.dart';
 import 'package:kookbags/app/language_select/screens/language_select.dart';
+import 'package:kookbags/app/loyality_screens/screens/loyality_convers_screen.dart';
+import 'package:kookbags/app/loyality_screens/screens/loyality_point_screen.dart';
 import 'package:kookbags/app/module_screen/screens/module_screen.dart';
 import 'package:kookbags/app/order_tracking_screen/screens/order_tracking_screens.dart';
 import 'package:kookbags/app/otp_screen/screens/otp_screens.dart';
@@ -40,7 +44,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
 
-          initialRoute: ChatScreen.pageRoute,
+          initialRoute: SignInScreen.pageRoute,
           routes: {
             SignInScreen.pageRoute:(context) => SignInScreen(), //complete
             SignUpScreen.pageRoute:(context) => SignUpScreen(), //complete
@@ -52,7 +56,11 @@ class MyApp extends StatelessWidget {
             ProfileScreen.pageRoute: (context)=> ProfileScreen(),//complete
             ProfileScreenEdit.pageRoute:(context) =>ProfileScreenEdit(), //Complete
             ConversationListSceen.pageRoute: (context) =>ConversationListSceen(),//complete
-            ChatScreen.pageRoute: (context) => ChatScreen(),
+            ChatScreen.pageRoute: (context) => ChatScreen(), //Complete
+            ReferAndEarnScreen.pageRoute: (context) => ReferAndEarnScreen(),//complete
+            ReferAndEarnCoupon.pageRoute: (context) => ReferAndEarnCoupon(),
+            LoyalityPointScreen.pageRoute: (context) => LoyalityPointScreen(),//complete
+            LoyalityConvertScreens.pageRoute: (context) => LoyalityConvertScreens(),
 
             //Mizan vai page starts here
             HomeScreen.pageRoute: (context) => HomeScreen(),

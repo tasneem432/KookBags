@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kookbags/app/chat_screen/widgets/chat-screen-header.dart';
 import 'package:kookbags/app/chat_screen/widgets/chat_screen_footer.dart';
+import 'package:kookbags/app/conversation_list_screen/screens/conversation_list_screen.dart';
 
 class ChatScreen extends StatelessWidget {
   static const pageRoute = '/chat-screen';
@@ -15,7 +16,11 @@ class ChatScreen extends StatelessWidget {
           children: [
             Column(
               children: [
-                ChatScreenHeader(),
+                GestureDetector(
+                    onTap: (){
+                      Navigator.pushNamed(context, ConversationListSceen.pageRoute);
+                    },
+                    child: ChatScreenHeader()),
                 Padding(
                   padding: EdgeInsets.only(left: 32.w,right: 32.w, top: 24.h),
                   child: Column(

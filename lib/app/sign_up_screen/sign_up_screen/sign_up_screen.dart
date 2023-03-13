@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kookbags/app/language_select/screens/language_select.dart';
+import 'package:kookbags/app/loyality_screens/screens/loyality_point_screen.dart';
 import 'package:kookbags/general/utils/app_colors.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -265,13 +266,13 @@ class SignUpScreen extends StatelessWidget {
 
                           GestureDetector(
                             onTap: (){
-                              Navigator.pushNamed(context, SelectLanguageScreen.pageRoute);
+                              Navigator.pushNamed(context, LoyalityPointScreen.pageRoute);
                             },
                             child: Container(
                               width: 335,
                               height: 48,
                               decoration: BoxDecoration(
-                                color: AppColors.otpSubmitButtton,
+                                color: Color(0xFFCD0608),
                                 borderRadius: BorderRadius.circular(8.r),
                               ),
                               child: Center(

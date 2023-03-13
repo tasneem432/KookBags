@@ -196,7 +196,7 @@ class OtpScreens extends StatelessWidget {
                       width: 335,
                       height: 48,
                       decoration: BoxDecoration(
-                        color: AppColors.otpSubmitButtton,
+                        color: Color(0xFFCD0608),
                         borderRadius: BorderRadius.circular(8.r),
                           
                       ),

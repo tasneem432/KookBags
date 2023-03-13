@@ -20,42 +20,47 @@ class ProfileScreen extends StatelessWidget {
       child: Scaffold(
         body: Column(
           children: [
-            Container(
-              width: 375.w,
-              decoration: BoxDecoration(
-                color: AppColors.helpAppBarColor,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3),
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, ProfileScreenEdit.pageRoute);
+              },
+              child: Container(
+                width: 375.w,
+                decoration: BoxDecoration(
+                  color: AppColors.helpAppBarColor,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3),
 
-                  ),
-
-                ],
-              ),
-              child: Column(
-                children: [
-                  SizedBox(height: 12.h,),
-                  Padding(
-                    padding:  EdgeInsets.only(left: 20.w, right: 20.w),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Image.asset("assets/icons/help-arrow.png",width: 20.w,height: 13.91.h,),
-                        Text("Profile",style: TextStyle(
-                          fontSize: 18.sp,
-                          fontWeight: FontWeight.w600,
-                          fontFamily: "poppins",
-                          color: Color(0xFF2D2D2D),
-                        ),),
-                        SizedBox(),
-                      ],
                     ),
-                  ),
-                  SizedBox(height: 12.h,),
-                ],
+
+                  ],
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 12.h,),
+                    Padding(
+                      padding:  EdgeInsets.only(left: 20.w, right: 20.w),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset("assets/icons/help-arrow.png",width: 20.w,height: 13.91.h,),
+                          Text("Profile",style: TextStyle(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w600,
+                            fontFamily: "poppins",
+                            color: Color(0xFF2D2D2D),
+                          ),),
+                          SizedBox(),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 12.h,),
+                  ],
+                ),
               ),
             ),
 
