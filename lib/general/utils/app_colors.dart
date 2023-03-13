@@ -18,6 +18,19 @@ class AppColors{
 
   //sign up screen
   static const signupTextField = Color(0xFF9B9B9B);
+  
+  //choose language screen
+  static const languageContainerBg = Color(0xFFFAFAFA);
+  static const languageText = Color(0xFF353535);
+  static const languageDividerRed = Color(0xFFCD0609);
+  static const languageTextfield = Color(0xFF61656A);
+
+
+  //help and support screen
+  static const helpBlueIcon = Color(0xFF2A66FF1A);
+  static const helporangeIcon = Color(0xFFFF0F2F580);
+  static const helpGreenIcon = Color(0xFFD7F2E5);
+  static const helpAppBarColor = Color(0xFFF1F1F1);
 
 
 }
