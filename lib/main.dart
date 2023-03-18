@@ -4,7 +4,9 @@ import 'package:kookbags/app/add_new_address_screen/screens/add_new_address_scre
 import 'package:kookbags/app/cagegory_screen/screens/category_screen.dart';
 import 'package:kookbags/app/central_reuseable_widgets/amar_app_header.dart';
 import 'package:kookbags/app/chat_screen/screens/chat_screen.dart';
+import 'package:kookbags/app/checkout_3/screens/checkout_three.dart';
 import 'package:kookbags/app/checkout_one/screens/checkout_one.dart';
+import 'package:kookbags/app/checkout_two/screens/checkout_two.dart';
 import 'package:kookbags/app/conversation_list_screen/screens/conversation_list_screen.dart';
 import 'package:kookbags/app/earn_and_reffer_screens/screens/earn_and_reffer_coupon.dart';
 import 'package:kookbags/app/earn_and_reffer_screens/screens/earn_and_reffer_screens.dart';
@@ -44,13 +46,15 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
 
-          initialRoute: SignInScreen.pageRoute,
+          initialRoute: CheckoutTwo.pageRoute,
           routes: {
             SignInScreen.pageRoute:(context) => SignInScreen(), //complete
             SignUpScreen.pageRoute:(context) => SignUpScreen(), //complete
             OtpScreens.pageRoute: (context)=> OtpScreens(), //complete
             SelectLanguageScreen.pageRoute: (context) => SelectLanguageScreen(), //Complete
             CheckOutOne.pageRoute: (context) => CheckOutOne(),
+            CheckoutTwo.pageRoute: (context) => CheckoutTwo(),
+            CheckoutThree.pageRoute: (context) => CheckoutThree(),
             AddNewAddressScreen.pageRoute: (context) => AddNewAddressScreen(),
             HelpAndSupportScreen.pageRoute: (context) => HelpAndSupportScreen(), //Complete
             ProfileScreen.pageRoute: (context)=> ProfileScreen(),//complete
